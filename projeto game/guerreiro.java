@@ -1,12 +1,14 @@
 public class Guerreiro extends Personagem{
 
-    Guerreiro(String nome,String arma,float vida, float dano){
-        super(nome,arma,vida,dano);
+    Guerreiro(String nome,String arma,int vida, float dano,String funcao){
+        super(nome,arma,vida,dano,funcao);
 
     }
     @Override
-    void atacar(){
-        System.out.println("| Guerreiro [" + this.nome + "] ataca com arma: " + this.arma);
+    public void atacar(){
+
+        System.out.println("| Guerreiro [" + getNome() + "] ataca com arma: " + getArma());
+
     }
 
 }
