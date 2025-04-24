@@ -1,10 +1,11 @@
 public class Mago extends Personagem {
 
-    Mago(String nome,String arma,float vida, float dano){
-        super(nome,arma,vida,dano);
+    Mago(String nome,String arma,int vida, float dano, String funcao){
+        super(nome,arma,vida,dano,funcao);
     }
     @Override
-    void atacar(){
-        System.out.println("| Mago [" + this.nome + "] ataca com arma: " + this.arma);
+   public void atacar(){
+        System.out.println("| Mago [" + getNome() + "] ataca com arma: " + getArma());
+        System.out.println("|O ataque foi feito com sucesso! " + getNome() + " atacou ");
     }
 }
