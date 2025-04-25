@@ -1,6 +1,6 @@
 public class Guerreiro extends Personagem{
 
-    Guerreiro(String nome,String arma,int vida, float dano,String funcao){
+    Guerreiro(String nome,String arma,int vida, int dano,String funcao){
         super(nome,arma,vida,dano,funcao);
 
     }
