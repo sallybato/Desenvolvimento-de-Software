@@ -1,6 +1,6 @@
 public class Mago extends Personagem {
 
-    Mago(String nome,String arma,int vida, float dano, String funcao){
+    Mago(String nome,String arma,int vida, int dano, String funcao){
         super(nome,arma,vida,dano,funcao);
     }
     @Override
