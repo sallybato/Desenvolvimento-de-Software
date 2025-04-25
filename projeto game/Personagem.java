@@ -4,14 +4,21 @@ public class Personagem {
     private String arma;
     private int vida;
     private String funcao;
+    private int dano;
 
-    Personagem(String nome, String arma, int vida, float dano, String funcao){
+    Personagem(String nome, String arma, int vida, int dano, String funcao){
         this.nome = nome;
         this.arma = arma;
         this.vida = vida;
+        this.dano = dano;
         this.funcao = funcao;
 
 
+
+    }
+
+    public int getDano() {
+        return dano;
     }
 
     public String getNome() {
@@ -33,14 +40,9 @@ public class Personagem {
     }
 
 
-    void receberdano(float dano) {
+    void receberdano(int dano) {
         this.vida -= dano;
         if (this.vida < 0)this.vida = 0;
-            }
-
-    public int valordano(){
-        return 10;
     }
 
 }
-
