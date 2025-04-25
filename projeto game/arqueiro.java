@@ -1,6 +1,6 @@
 public class Arqueiro extends Personagem{
 
-    Arqueiro(String nome, String arma, int vida, float dano, String funcao){
+    Arqueiro(String nome, String arma, int vida, int dano, String funcao){
         super(nome, arma, vida, dano,funcao);
 
     }
