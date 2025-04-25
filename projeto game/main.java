@@ -21,6 +21,7 @@ public class Main {
             System.out.println("| [3] Mostrar a vida                     |");
             System.out.println("| [4] Sair                               |");
             System.out.println("------------------------------------------");
+
             opcoes = input.nextInt();
             input.nextLine();
 
@@ -31,6 +32,10 @@ public class Main {
                         System.out.print(personagens[i].getFuncao());
                         System.out.print("->");
                         System.out.println(personagens[i].getNome());
+                        System.out.println("| Vida->" + personagens[i].getVida());
+                        System.out.println("| Dano de ataque do Campeão-> " + personagens[i].getDano());
+                        System.out.println("");
+
                     }
                     break;
 
@@ -42,6 +47,9 @@ public class Main {
                     }
                     int personagemAtacar = input.nextInt();
                     input.nextLine();
+
+                    Personagem personagem =personagens[personagemAtacar];
+
                     System.out.println("Escolha o personagem que quer sofrer o ataque: ");
                     for(int i = 0; i < personagens.length; i++) {
                         System.out.print("["+i+"] "+personagens[i].getFuncao() + "->");
@@ -50,7 +58,7 @@ public class Main {
                     int personagemSofrer = input.nextInt();
                     input.nextLine();
 
-                  break;
+                    break;
             }
         }while(opcoes!=4);
 
