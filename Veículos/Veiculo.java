@@ -24,22 +24,30 @@ public class Veiculo {
         return modelo;
     }
 
-    public boolean Ligado() {
-        return Ligado;
-    }
 
     public void setLigado(boolean ligado) {
         Ligado = ligado;
     }
-
+    public boolean Ligado(){
+        return Ligado;
+}
     void ligar() {
-        if (!this.Ligado()) {
+        if (!this.isLigado()) {
             System.out.println("O veículo está ligado!");
             setLigado(true);
+        }else{
+            System.out.println("porra! O "+ getModelo()+ " ja ta ligado ♥");
         }
+
+
     }
+
+    public boolean isLigado() {
+        return Ligado;
+    }
+
     void desligar(){
-        if(!this.Ligado()){
+        if(this.isLigado()){
             System.out.println("O veículo esta desligado!");
             setLigado(false);
         }
