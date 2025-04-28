@@ -11,14 +11,13 @@ public class Aviao extends VeiculoAereo {
     }
 
     void decolar() {
-        System.out.println("••••••••••••••••••••••••••••••••••••••••");
-        System.out.println("•O" + getModelo() + "acaba de decolar☻•");
-        System.out.println("••••••••••••••••••••••••••••••••••••••••");
+        System.out.println("•••••••••••••••••••••••••••••");
+        System.out.println("•O " + getModelo() + " acaba de decolar☻•");
     }
 
     void pousar() {
-        System.out.println("•••••••••••••••••••••••••••••••••••••••");
-        System.out.println("•O" + getModelo() + "acaba de pousar☻•");
-        System.out.println("•••••••••••••••••••••••••••••••••••••••");
+
+        System.out.println("•O " + getModelo() + " acaba de pousar☻•");
+        System.out.println("••••••••••••••••••••••••••••");
     }
 }
